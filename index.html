@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- ======================================================================= -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <script type="text/javascript" id="www-widgetapi-script" src="./wayfast-traversability-website_files/www-widgetapi.js" async="">
+</script>
+  <script src="./wayfast-traversability-website_files/jsapi" type="text/javascript">
+</script>
+  <script type="text/javascript">
+//<![CDATA[
+  google.load("jquery", "1.3.2");
+  //]]>
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="./wayfast-traversability-website_files/jquery.min.js">
+</script>
+  <style type="text/css">
+/*<![CDATA[*/
+  body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+  /*]]>*/
+  </style><!-- ======================================================================= -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async="" src="./wayfast-traversability-website_files/js" type="text/javascript">
+</script>
+  <script type="text/javascript">
+//<![CDATA[
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114291442-6');
+  //]]>
+  </script>
+  <script type="text/javascript" src="./wayfast-traversability-website_files/hidebib.js">
+</script>
+  <link href="./wayfast-traversability-website_files/css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="" />
+
+  <title>WayFAST: Traversability Predictive Navigation for Field Robots</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./wayfast-traversability-website_files/iframe_api" type="text/javascript">
+</script>
+</head>
+
+<body>
+  <br />
+
+  <center>
+    <span style="font-size:50px; font-weight:bold;">WayFAST: Traversability Predictive <br/> Navigation for Field Robots</span>
+  </center>
+  
+  <br />
+
+  <table align="center" width="1300px" style='margin-bottom: 1px'>
+    <tbody>
+      <tr>
+        <td align="center" width="250px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Mateus Valverde Gasparino<sup>1</sup></span>
+          </center>
+        </td>
+
+        <td align="center" width="250px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Arun Narenthiran Sivakumar<sup>1</sup></span>
+          </center>
+        </td>
+
+        <td align="center" width="100px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Yixiao Liu<sup>1</sup></span>
+          </center>
+        </td>
+
+        <td align="center" width="300px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Andres Eduardo Baquero Velasquez<sup>1</sup></span>
+          </center>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" width="1100px" style='margin-bottom: 20px'>
+    <tbody>
+      <tr>
+        <td align="center" width="200px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Vitor Akihiro Hisano Higuti<sup>2</sup></span>
+          </center>
+        </td>
+
+        <td align="center" width="150px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">John Rogers<sup>3</sup></span>
+          </center>
+        </td>
+        
+        <td align="center" width="150px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Huy Tran<sup>4</sup></span>
+          </center>
+        </td>
+
+        <td align="center" width="150px">
+          <center>
+            <span style="font-size:22px; font-weight:bold">Girish Chowdhary<sup>1</sup></span>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <table align="center" width="600px" style='margin-bottom: 1px'>
+    <tr>
+      <td align="center" width="200px">
+        <center>
+          <span style="font-size:17px; font-weight: 200;"><sup>1</sup> Field Robotics Engineering and Science Hub (FRESH), Illinois Autonomous Farm, University of Illinois at Urbana-Champaign (UIUC), IL</span>
+        </center>
+      </td>
+      
+    </tr>
+  </table>
+
+  <table align="center" width="700px" style='margin-bottom: 1px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:17px; font-weight:200;"><sup>2</sup> EarthSense Inc., Champaign, IL, USA</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table align="center" width="700px" style='margin-bottom: 1px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:17px; font-weight:200;"><sup>3</sup> DEVCOM Army Research Lab, Adelphi, MD, USA</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+  
+  <table align="center" width="700px" style='margin-bottom: 20px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:17px; font-weight:200;"><sup>4</sup> Dept. of Aerospace Engineering, UIUC, IL, USA</span>
+        </center>
+      </td>
+    </tr>
+  </table> 
+
+  <table align="center" width="700px" style='margin-bottom: 50px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:15px; font-weight:200;">Correspondence to {mvalve2, girishc}@illinois.edu </span>
+        </center>
+      </td>
+      
+    </tr>
+  </table>
+
+
+  <!--table align="center" width="700px" style='margin-bottom: 10px'>
+      <tr>
+        <td align="center" width="230px">
+          <center>
+            <span style="font-size:30px; font-weight: 500;">RSS 2021</span>
+          </center>
+        </td>
+      </tr>
+  </table-->
+  
+  <table align="center" width="700px">
+          <tbody>
+            <tr>
+              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Paper</a></span></center></td>
+              <td align="center" width="50px"><center><span style="font-size:24px"><a href="https://github.com/matval/WayFAST">Code</a></span></center></td>
+              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Data</a></span></center></td-->
+              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Slides</a></span></center></td>
+              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Poster</a></span></center></td>
+            </tr>
+          </tbody>
+  </table>
+
+  <br />
+
+  <table align="center" width="1350px" style='margin-bottom: 5px'>
+    <tbody>
+      <tr>
+        <td align="center" width="800px">
+          <center>
+            <a href="./wayfast-traversability-website_files/WayFAST.jpg"><img src="./wayfast-traversability-website_files/WayFAST.jpg" width="760px" /></a><br />
+          </center>
+        </td>
+
+        <td align="center" width="550px">
+          <center>
+            <div style="width:500px; margin:0 auto; text-align:justify">
+              We present a self-supervised approach for learning
+              to predict traversable paths for wheeled mobile robots that
+              require good traction to navigate. Our algorithm, termed
+              WayFAST (Waypoint Free Autonomous Systems for Traversability),
+              uses RGB and depth data, along with navigation experience,
+              to autonomously generate traversable paths in outdoor
+              unstructured environments. Our key inspiration is that traction
+              can be estimated for rolling robots using kinodynamic models.
+              Using traction estimates provided by an online receding horizon
+              estimator, we are able to train a traversability prediction
+              neural network in a self-supervised manner, without requiring
+              heuristics utilized by previous methods. We demonstrate the
+              effectiveness of WayFAST through extensive field testing in
+              varying environments, ranging from sandy dry beaches to
+              forest canopies and snow covered grass fields. Our results
+              clearly demonstrate that WayFAST can learn to avoid geometric
+              obstacles as well as untraversable terrain, such as snow, which
+              would be difficult to avoid with sensors that provide only
+              geometric data, such as LiDAR. Furthermore, we show that
+              our training pipeline based on online traction estimates is more
+              data efficient than other heuristic-based methods.
+            </div>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br />
+  <hr/>
+  <br />
+
+  <table align="center" width="700px" style='margin-bottom: 20px'>  
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:28px; font-weight:bold;">We tested WayFAST in a variety of environments</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table align="center" width="1350px" style='margin-bottom: 5px'>
+    <tbody>
+      <tr>
+        <td align="center" height="700">
+          <center>
+            <a href="./wayfast-traversability-website_files/wayfast1.gif"><img style="border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/wayfast1.gif" height="700px" /></a><br />
+          </center>
+        </td>
+
+        <td align="center" height="700">
+          <center>
+            <a href="./wayfast-traversability-website_files/wayfast2.gif"><img style="border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/wayfast2.gif" height="700px" /></a><br />
+          </center>
+        </td>
+
+        <td align="center" height="700">
+          <center>
+            <a href="./wayfast-traversability-website_files/wayfast3.gif"><img style="border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/wayfast3.gif" height="700px" /></a><br />
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" width="700px" style='margin-bottom: 1px'>  
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:15px; font-weight: 200;">Videos at 2x</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+  
+  
+
+  <!--table align="center" width="300px" style="padding-top: 25px">
+    <tbody>
+      <tr>
+        <td align="center" width="300px"><iframe width="560" height="315" src="https://www.youtube.com/embed/B8uucfzb0P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+      </tr>
+    </tbody>
+  </table-->
+
+  <br />
+  <hr/>
+  <br />
+
+  <table align="center" width="700px" style='margin-bottom: 20px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:28px; font-weight:bold;">WayFAST Overview</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <p style="margin-top:4px;">
+  </p>
+
+  <table align="center" width="1350px">
+    <tbody>
+      <tr>
+        <td align="center" width="550px">
+          <center>
+            <div style="width:500px; margin:0 auto; text-align:justify">
+              WayFAST is a modular architecture. In our method, images are used to
+              predict a local traversability map, which is used to generate a
+              cost function for the model predictive control (MPC) block.
+              MPC generates locally optimal goal-oriented trajectories of
+              good traction that avoid obstacles.
+            </div>
+            <br/>
+            <div style="width:500px; margin:0 auto; text-align:justify">
+              To drive the robot on a safe path to reach the goal location,
+              we formulate a nonlinear model predictive controller
+              (NMPC) that leverages convolutional network traversability prediction.
+              A kino-dynamic model is used to predict the robot<span>&#39;</span>s states while network
+              output is used to predict terrain traversability.
+            </div>
+          </center>
+        </td>
+
+        <td width="600px">
+          <center>
+            <a href="./wayfast-traversability-website_files/wayfast_schematic.png"><img src="./wayfast-traversability-website_files/wayfast_schematic.png" width="600px" /></a><br />
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <br />
+  <hr/>
+  <br />
+
+  <table align="center" width="700px" style='margin-bottom: 20px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:28px; font-weight:bold;">Paper</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+
+  <table align="center" width="auto">
+    <tbody>
+      <tr>
+        <td width="200px" align="left">
+          <a href=""><img style="width:200px; border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/thumbnail.png"/></a>
+        </td>
+        
+        <td width="50px" align="center"></td>
+
+        <td width="600px" align="left">
+          <div style="font-size:15pt; text-align:justify">
+            Mateus Valverde Gasparino, Arun Narenthiran Sivakumar, Yixiao Liu, Andres Eduardo Baquero Velasquez, Vitor Akihiro Hisano Higuti, John Rogers, Ruy Tran, Girish Chowdhary.
+            WayFAST: Traversability Predictive Navigation for Field Robots.
+          </div></p>
+          
+          <div class="paper" id="assemblies19_bib">
+            <pre xml:space="preserve" style="display: block; font-size: 12px">
+@article{gasparino2022wayfast,
+  title={WayFAST: Traversability Predictive Navigation for Field Robots},
+  author={Gasparino, Mateus V. and Sivakumar, Arun N. and Liu, Yixiao and
+  Velasquez, Andres E. B. and Higuti, Vitor A. H. and Rogers, John and
+  Tran, Huy, and Chowdhary, Girish},
+  journal={arXiv preprint arXiv: },
+  year={2022}
+}
+            </pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br />
+  <hr/>
+  <br />
+
+  <table align="center" width="700px" style='margin-bottom: 20px'>
+    <tr>
+      <td align="center" width="230px">
+        <center>
+          <span style="font-size:28px; font-weight:bold;">Acknowledgements</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table align="center" width="500px">
+      <tbody><tr><td width="500px"><left>
+        This work was supported in part by ARL #W911NF2020184, NSF STTR #1951250, and NSF NRI 2.0 NIFA #2021-67021-33449.
+        <br/>Website template from <a href="https://matthewchang.github.io/value-learning-from-videos/">here</a>. <br>
+      </left></td></tr>
+    </tbody>
+  </table>
+
+  <br/>
+  <br/>
+  <br/>
+  
+  <script xml:space="preserve" language="JavaScript" type="text/javascript"></script>
+</body>
+</html>
