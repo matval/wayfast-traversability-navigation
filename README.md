@@ -1,1 +1,0 @@
-# WayFAST paper website
